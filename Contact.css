@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+}
+header{
+    
+    color: black;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+.container{
+    max-width: 1224px;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-menu{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.navbranding{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color: #2972d1;
+}
+
+.nav-link{
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    background-color: black;
+}
+
+.hambuger{
+    display: none;
+    cursor: pointer;
+}
+
+/*Responsiveness*/
+
+@media(max-width:1024px){
+    .hambuger{
+        display: block;
+    }
+    .hambuger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hambuger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hambuger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #f3f3f4 ;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+     }
+     .nav-item{
+        margin: 16px 0;
+     }
+     .nav-menu.active{
+        left: 0;
+     }
+}
+
+/* Contact */
+.contact{
+    margin-top: 70px;
+    padding: 30px 250px;
+}
+
+.label{
+    font-weight: 600;
+}
+
+.grid-container-contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+}
+
+.grid-item-contact2{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+
+    margin: 40px;
+}
+
+.icon:hover{
+    
+    transform: rotate(-45deg);
+}
+
+input, select, textarea {
+    width: 400px;
+    padding: 12px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+input[type=submit]{
+    width: 200px;
+    margin-top: 30px;
+    background-color: white;
+    border: 3px solid #2972d1;
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #2972d1;
+    font-weight: 600;
+}
+  
+input[type=submit]:hover{
+    width: 200px;
+    margin-top: 30px;
+    background-color: #2972d1;
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}

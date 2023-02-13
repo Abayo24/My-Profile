@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a class="navbranding" href="#">abayo.</a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="hambuger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contact">
+        <div class="grid-container-contact">          
+            <div class="grid-item-contact1">
+                <form class="form" action="" name="myForm" onsubmit="return(validate());">
+                    <table class="myform">
+                        <tr>
+                            <td class="label">First Name</td>
+                            <td><input type="text" name="FirstName" placeholder="Your First Name"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Last Name</td>
+                            <td><input type="text" name="LastName" placeholder="Your Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Phone Number</td>
+                            <td><input type="number" name="PhoneNumber" placeholder="Your Contact"></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Country</td>
+                            <td>
+                                <select name="Country">
+                                    <option value="-1" selected>[choose yours]</option>
+                                    <option value="1">KENYA</option>
+                                    <option value="2">INDIA</option>
+                                    <option value="3">USA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">Message</td>
+                            <td><textarea name="Message" placeholder="Write your messge here..."></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="label">
+                                <input type="submit" name="Submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form> 
+                
+            </div>
+            <div class="grid-item-contact2">
+                <a class="icon" href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="Images/icons//gmail.png"></a>
+                <a class="icon" href="https://github.com/Abayo24"><img src="Images/icons//github.png"></a>
+                <a class="icon" href="https://www.linkedin.com/in/abayo-akinyi/"><img src="Images/icons//linkedin.png"></a>
+            </div>
+            </div>
+
+    </div>
+    <div class="icons">
+          
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
