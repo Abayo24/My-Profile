@@ -2,11 +2,6 @@
 //initialize the session
 session_start();
 
-//check if user is logged in, if not redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +33,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       </div>
       <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-            Hello, <?php $_SESSION["First_Name"] ?>
+            Hello, <?php echo $_SESSION["First_Name"] ?>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Settings</a></li>

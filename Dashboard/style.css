@@ -35,3 +35,39 @@
   .sidebar .nav-link.active {
     color: #0d6efd;
   }
+
+  /*Login Page*/
+  .signup-form{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 500px;
+    padding-top: 80px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  h2{
+    color:#A93226;
+    padding-left: 190px;
+  }
+
+  .hint-text{
+    color: #A93226;
+    padding-left: 170px;
+
+  }
+  .form-group{
+    margin-bottom: 20px;
+    width:400px;
+    padding-left: 80px;
+  }
+
+  .form-group button{
+    width: 200px;
+    margin-left: 60px;
+    border-radius: 20px ;
+    background-color: #A93226;
+    color: aliceblue;
+  }
