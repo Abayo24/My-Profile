@@ -100,3 +100,30 @@ function getRandomhobby() {
 function displayhobby() {
   document.getElementById("small").innerHTML = getRandomhobby();
 }
+
+//TESTAPP
+function sumInput() {
+  let numbers = [];
+  while (true) {
+    let value = prompt("A number please?", 0);
+    // should we cancel?
+    if (value === "" || value === null || !isFinite(value)) break;
+    numbers.push(+value);
+  }
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum;
+}
+
+function displaySum(){
+  let inputNumbers = document.getElementById("inputNumbers").value;
+  let numbers = inputNumbers.split(',').map(Number);
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  alert(sum);
+}
+

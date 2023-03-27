@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+   
+}
+
+form {
+  border: 4px solid #c6c7cc;
+  border-radius: 5px;
+  font: 14px "Segoe UI", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width:700px;
+  margin: auto;
+  background-image: url("131480741-fingerprint-vector-colored-with-the-national-flag-of-kenya.jpg");
+  	background-size: 45% 45%;
+    background-repeat: no-repeat;
+    background-position: 46% 55%;
+
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+input, select{
+  border-radius: 5px;
+  font: 14px/1.4 "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  border: 4px solid #c6c7cc;
+  height: 2rem;
+ 
+}
+.radio{
+  
+  display: inline;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.header{
+    font-size: 2rem;
+    background-color: #000000;
+    padding: 1px;
+    color: white;
+    
+    
+}
+.account-info {
+  padding: 20px 50px 20px 50px;
+}
+.account-info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.account-info input {
+  background: #fff;
+  border: 5px solid #c6c7cc;
+  
+  color: #636466;
+  padding: 6px;
+  
+  width: 100%;
+}
+input.radio{
+  display: inline;
+}
+.account-action {
+  background: rgb(187, 3, 3);
+  border-top: 5px solid #c6c7cc;
+  padding: 30px;
+  margin: auto;
+  padding-left: 50px;
+}
+.account-action .btn {
+  background-color:rgb(2, 82, 2);
+  font-size: 20px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  height: 45px;
+  width: 120px;
+ padding-left: 30px;
+ 
+}
+
