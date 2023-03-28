@@ -16,8 +16,7 @@ if(isset($_POST['save'])) {
     }
     else{
         echo "Invalid Email ID/Password";
-        echo "$email";
-        echo md5($pass);
+        
     
     }
 }
