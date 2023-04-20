@@ -46,7 +46,7 @@
             </div>
 
             <div class="form-group">
-                <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Register Now</button>
+                <button type="submit" class="form-control "name="save" class="btn btn-success btn-lg btn-block">Register Now</button>
             </div>
 
             <div class="text-center">Already have an account? <a href="log_in.php">Sign in</a></div>

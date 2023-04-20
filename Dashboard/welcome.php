@@ -1,52 +1,47 @@
 <?php include 'header.php'; ?>
- <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Overview</li>
-  </ol>
- </nav>
+ 
  <h1 class="h2">Dashboard</h1>
- <p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
+ <p>This is the homepage of admin interface and can only be seen by the admin.</p>
 
 <!--Widget cards -->
 <div class="row my-4">
   <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
       <div class="card">
-          <h5 class="card-header">Customers</h5>
+          <h5 class="card-header">Total Students</h5>
           <div class="card-body">
-            <h5 class="card-title">345k</h5>
-            <p class="card-text">Feb 1 - Apr 1, United States</p>
-            <p class="card-text text-success">18.2% increase since last month</p>
+            <h3 class="card-title">645</h3>
+            <p class="card-text">Jan 1 - Apr 30</p>
+            <p class="card-text text-success">18.2% increase since last Sem</p>
           </div>
         </div>
   </div>
   <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
       <div class="card">
-          <h5 class="card-header">Revenue</h5>
+          <h5 class="card-header">Total Instructors</h5>
           <div class="card-body">
-            <h5 class="card-title">$2.4k</h5>
-            <p class="card-text">Feb 1 - Apr 1, United States</p>
-            <p class="card-text text-success">4.6% increase since last month</p>
+            <h3 class="card-title">20</h3>
+            <p class="card-text">Jan 1 - Apr 30</p>
+            <p class="card-text text-success">4.6% increase since last Sem</p>
           </div>
         </div>
   </div>
   <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
       <div class="card">
-          <h5 class="card-header">Purchases</h5>
+          <h5 class="card-header">Total Income</h5>
           <div class="card-body">
-            <h5 class="card-title">43</h5>
-            <p class="card-text">Feb 1 - Apr 1, United States</p>
-            <p class="card-text text-danger">2.6% decrease since last month</p>
+            <h3 class="card-title">Ksh 70,000,000</h3>
+            <p class="card-text">Jan 1 - Apr 30</p>
+            <p class="card-text text-danger">2.6% decrease since last Sem</p>
           </div>
         </div>
   </div>
   <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
       <div class="card">
-          <h5 class="card-header">Traffic</h5>
+          <h5 class="card-header">Total Expenses</h5>
           <div class="card-body">
-            <h5 class="card-title">64k</h5>
-            <p class="card-text">Feb 1 - Apr 1, United States</p>
-            <p class="card-text text-success">2.5% increase since last month</p>
+            <h3 class="card-title">Ksh 2,000,000</h3>
+            <p class="card-text">Jan 1 - Apr 30</p>
+            <p class="card-text text-success">2.5% increase since last Sem</p>
           </div>
         </div>
   </div>
@@ -55,82 +50,77 @@
 <div class="row">
   <div class="col-12 col-xl-8 mb-4 mb-lg-0">
       <div class="card">
-          <h5 class="card-header">Latest transactions</h5>
+          <h5 class="card-header">Latest Students</h5>
           <div class="card-body">
               <div class="table-responsive">
                   <table class="table">
                       <thead>
                         <tr>
-                          <th scope="col">Order</th>
-                          <th scope="col">Product</th>
-                          <th scope="col">Customer</th>
-                          <th scope="col">Total</th>
-                          <th scope="col">Date</th>
-                          <th scope="col"></th>
+                          <th scope="col">Student id</th>
+                          <th scope="col">Student Name</th>
+                          <th scope="col">Date Join</th>
+                          <th scope="col">Parent Name</th>
+                          <th scope="col">Contact</th>
+                          
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">17371705</th>
-                          <td>Volt Premium Bootstrap 5 Dashboard</td>
-                          <td>johndoe@gmail.com</td>
-                          <td>€61.11</td>
-                          <td>Dec 31 2022</td>
-                          <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                          <td>Benjamin Kamau</td>
+                          <td>05/01/2023</td>
+                          <td>Paul Kamau</td>
+                          <td>0720931904</td>
+                          
                         </tr>
                         <tr>
                           <th scope="row">17370540</th>
-                          <td>Pixel Pro Premium Bootstrap UI Kit</td>
-                          <td>jacob.monroe@company.com</td>
-                          <td>$153.11</td>
-                          <td>Dec 28 2022</td>
-                          <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                          <td>Ann Bosire</td>
+                          <td>05/01/2023</td>
+                          <td>Joseph Bosire</td>
+                          <td>07392657</td>
+                          
                         </tr>
                         <tr>
-                          <th scope="row">17371705</th>
-                          <td>Volt Premium Bootstrap 5 Dashboard</td>
-                          <td>johndoe@gmail.com</td>
-                          <td>€61.11</td>
-                          <td>Dec 31 2022</td>
-                          <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                          <th scope="row">17371706</th>
+                          <td>Richard Owino</td>
+                          <td>05/01/2023</td>
+                          <td>Emma Atieno</td>
+                          <td>0754365871</td>
+                          
                         </tr>
                         <tr>
-                          <th scope="row">17370540</th>
-                          <td>Pixel Pro Premium Bootstrap UI Kit</td>
-                          <td>jacob.monroe@company.com</td>
-                          <td>$153.11</td>
-                          <td>Dec 28 2022</td>
-                          <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                          <th scope="row">17370708</th>
+                          <td>Max Kilonzo</td>
+                          <td>05/01/2023</td>
+                          <td>Elizabeth Wayua</td>
+                          <td>0748734987</td>
+                          
                         </tr>
                         <tr>
-                          <th scope="row">17371705</th>
-                          <td>Volt Premium Bootstrap 5 Dashboard</td>
-                          <td>johndoe@gmail.com</td>
-                          <td>€61.11</td>
-                          <td>Dec 31 2022</td>
-                          <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                          <th scope="row">17371709</th>
+                          <td>Lennox Gitonga</td>
+                          <td>05/01/2023</td>
+                          <td>Paul Gitonga</td>
+                          <td>0787658678</td>
+                          
                         </tr>
                         <tr>
-                          <th scope="row">17370540</th>
-                          <td>Pixel Pro Premium Bootstrap UI Kit</td>
-                          <td>jacob.monroe@company.com</td>
-                          <td>$153.11</td>
-                          <td>Dec 28 2022</td>
-                          <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                          <th scope="row">17370710</th>
+                          <td>Brenda Nawiri</td>
+                          <td>05/01/2023</td>
+                          <td>Achieng Abich</td>
+                          <td>07845354</td>
+                        
                         </tr>
                       </tbody>
                     </table>
               </div>
-                <a href="#" class="btn btn-block btn-light">View all</a>
+                <a href="#" class="btn btn-block btn-light" id="button">View all</a>
           </div>
       </div>
   </div>
-  <div class="col-12 col-xl-4">
-  <div class="card">
-  <h5 class="card-header">Traffic last 6 months</h5>
-  <div class="card-body">
-      <div id="traffic-chart"></div>
-  </div>
+  
   </div>
   </div>
 </div>

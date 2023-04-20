@@ -14,19 +14,33 @@ if($_GET['id']) {
 ?>
 
 <style>
+    <style type="text/css">
     fieldset{
         margin: auto;
-        margin-top: 100px;
-        width: 50%;
+        margin-top: 50px;
+        width: 70%;
     }
 
-    table tr th{
+    table tr th {
         padding-top: 20px;
     }
+    legend{
+        color: #a93226;
+    }
+    #btn{
+            width: 150px;
+            border-radius: 20px;
+            padding: 5px;
+            margin-top: 30px;
+            margin-right: 30px;
+            background-color: #a93226;
+            color: white;
+        }
+</style>
 </style>
 
 <fieldset>
-<legend>Edit Member</legend>
+<legend>Edit Student</legend>
 
 <form action="update_member.php" method="post">
     <table cellspacing="0" cellpadding="0">
@@ -48,8 +62,8 @@ if($_GET['id']) {
         </tr>
         <tr>
             <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
-            <td><button type="submit">Save Changes</button></td>
-            <td><a href="show_member.php"><button type="button">Back</button></a></td>
+            <td><button type="submit" id="btn">Save Changes</button></td>
+            <td><a href="show_member.php"><button type="button" id="btn">Back</button></a></td>
         </tr>
     </table>
 </form>
